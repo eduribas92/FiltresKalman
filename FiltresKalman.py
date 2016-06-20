@@ -205,7 +205,7 @@ def TrajectoriaLineal():
     u = np.matrix([[0],[0],[0],[0]])
     Q = np.zeros(4)
     H = np.eye(4)
-    R = np.eye(4)*0.2
+    R = np.eye(4)*0.5
     I = np.eye(4)
 
     # FILTRE DE KALMAN
@@ -273,7 +273,7 @@ def TirParabolic():
                    [gravetat*interval_temps]])
     Q = np.zeros(4)
     H = np.eye(4)
-    R = np.eye(4)*0.2
+    R = np.eye(4)*0.4
     I = np.eye(4)
 
     # FILTRE DE KALMAN
